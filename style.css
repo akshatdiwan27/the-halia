@@ -1,0 +1,554 @@
+
+ 
+ 
+ 
+ 
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+  
+    
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+
+   
+   
+}
+
+@font-face {
+    font-family:myfont ;
+    src: url(sis.ttf);
+   }
+
+
+#main{ 
+    width: 100%;
+    height: 100%;
+    background-color: rgb(248, 250, 250);
+    padding:10px;
+    
+    
+  
+    
+}
+
+#page1{
+    /* background-color: blue; */
+    height: 100%;
+    width: 100%;
+    background-image: url(pasta\ +\ pizza.jfif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+#masternav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+    
+}
+
+#box h1{
+    width: 50px;
+    font-size: 40px;
+    color: aliceblue;
+    font-family: myfont;
+    color:#ddd;
+    
+
+}
+
+
+
+
+
+#nav{
+    width: 100%;    
+    /* background-color: yellowgreen; */
+    display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   gap: 35px;
+   padding : 10px 20px;
+   }
+
+#nav h4{
+    color: aliceblue;
+    font-weight: 200;
+    font-size: 20px;
+}
+
+
+
+
+
+#center {
+    width: 300px;
+    height: 300px;
+    /* background-color: brown; */
+    margin-left: 40%;
+    margin-top: 15%;
+    text-align: center;
+    
+}
+
+#center h1{
+    font-size: 80px;
+    font-weight: 500;
+   font-family: myfont;
+   color: goldenrod;
+    margin-top: 0;
+    margin-bottom: 0;
+  /* background-color: aqua; */
+  text-transform: capitalize;
+  position:relative;
+  margin: -30%;
+  
+
+}
+
+
+#center h2{
+    font-size: 60px;
+    font-weight: 600;
+   color: antiquewhite;
+   text-transform: capitalize;
+   
+}
+
+#center h1 h2{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#center h4{
+    font-weight: 200;
+    font-size: 20PX;
+    color: antiquewhite;
+    text-transform: capitalize;
+    
+}
+
+.btn{
+    
+    cursor:pointer;
+      position:absolute;
+      left: 46%;
+      padding:10px 20px;
+      background:white;
+      font-size:20px;
+      border-top-right-radius:10px;
+      border-bottom-left-radius:10px;
+      transition:all 1s;
+      &:after,&:before{
+        content:" ";
+        width:10px;
+        height:10px;
+        position:absolute;
+        border :0px solid #fff;
+        transition:all 1s;
+        }
+      &:after{
+        top:-1px;
+        left:-1px;
+        border-top:5px solid black;
+        border-left:5px solid black;
+      }
+      &:before{
+        bottom:-1px;
+        right:-1px;
+        border-bottom:5px solid black;
+        border-right:5px solid black;
+      }
+      &:hover{
+        border-top-right-radius:0px;
+      border-bottom-left-radius:0px;
+         background:rgba(0,0,0,.5);
+         color:white;
+        &:before,&:after{
+          
+          width:100%;
+          height:100%;
+           border-color:white;
+        }
+      }
+    }
+
+#cenetr button{
+    background:#ffebee;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    
+
+}
+
+
+
+
+
+
+#page2{
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(255, 0, 0); */
+    display: flex;
+
+}
+
+#left{
+    width: 50%;
+    height:100%;
+    /* background-color: crimson; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+   
+}
+
+#box1{
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+   position: relative;
+   top: 10%;
+
+   
+    
+}
+
+#box1 h1{
+    font-size: 80px;
+    font-family: myfont;
+    font-weight: 300;
+    color: goldenrod;
+    position:relative;
+    margin: -15%;
+    text-transform: capitalize;
+}
+
+#box1 h2{
+    font-size: 50px;
+    text-transform: capitalize;
+   
+}
+
+
+
+#box2{
+    width: 100%;
+    height: 50%;    
+    text-align: center;
+    align-content: center;
+    position: relative;
+    top: -10%;
+}
+
+#box2 p{
+    font-size: 20px;
+
+}
+
+
+#right{
+    width: 50%;
+   height: 100%;
+    /* background-color: rgb(37, 220, 20); */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    
+
+}
+#box3{
+    width: 500px;
+    height: 300px;
+   
+   background-image: url(Interior\ details.jfif);
+   background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5)
+
+}
+
+#box4{
+    width: 500px;
+    height: 300px;
+    background-image: url(download\ \(1\).jfif);
+    background-size: cover ;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5)
+    
+   
+}
+
+
+#page3{
+    width: 100%;
+    height: 100%;
+   
+    
+}
+
+#rect1{
+    width: 100%;
+    height: 25%;
+ 
+    
+   
+}
+
+#rect1 h1{
+    font-size: 50px;
+    font-family: myfont;
+    text-transform: capitalize;
+   text-align: center;
+   justify-content: center;
+   color: goldenrod;
+   position: relative;
+   margin: -1%;
+   
+   
+}
+
+#rect1 h2{
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-align: center;
+    position: relative;
+    margin: -3%;
+    
+}
+
+#rect2{
+    width: 100%;
+    height: 40%;
+    /* background-color: rgb(252, 141, 6); */
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+#rect2::-webkit-scrollbar{
+   background-color: transparent;
+   height: 5px; 
+   
+}
+
+#rect2::-webkit-scrollbar-thumb{
+    background-color:black;
+   
+}
+
+
+
+
+
+
+#box6{
+    width: 20%;
+    flex-shrink: 0;
+    background-image: url(image/18\ Reasons\ Chefs\ Are\ Better\ At\ Life.jfif);
+    background-size: cover ;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    
+}
+
+
+#box7{
+    width: 20%;
+    flex-shrink: 0;
+    background-image: url(image/8e8e19b2-642f-4044-a1b1-ea6746ebd48e.jfif);
+    background-size: cover ;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+#box8{
+    width: 20%;
+    flex-shrink: 0;
+    background-image: url(image/A\ chef\ is\ seasoning\ his\ food\ before\ giving\ it\ to\ the\ server_.jfif);
+    background-size: cover ;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+
+#box9{
+    width: 20%;
+    flex-shrink: 0;
+    background-image: url(image/Chicken\ with\ carrots\ cooked\ in\ Sauternes.jfif);
+    background-size: cover ;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+}
+
+
+
+#box10{
+    width: 20%;
+    flex-shrink: 0;
+    background-image: url(image/download\ \(2\).jfif);
+    background-size: cover ;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+
+#box11{
+    width: 20%;
+    flex-shrink: 0;
+    background-image: url(image/download\ \(3\).jfif);
+    background-size: cover ;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+#box12{
+    width: 20%;
+    flex-shrink: 0;
+    background-image: url(image/Press\ Club\ Hanoi\ Two\ Star\ Michelin.jfif);
+    background-size: cover ;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+#box13{
+    width: 20%;
+    flex-shrink: 0;
+    background-image: url(image/Sticky\ lamb\ shanks\ -\ Elmarie\ Berry.jfif);
+    background-size: cover ;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#rect3{
+    width: 100%;
+    height: 35%;
+   
+}
+
+.footer{
+    background:#000;
+    padding:30px 0px;
+    font-family: 'Play', sans-serif;
+    text-align:center;
+    }
+    
+    .footer .row{
+    width:100%;
+    margin:1% 0%;
+    padding:0.6% 0%;
+    color:gray;
+    font-size:0.8em;
+    }
+    
+    .footer .row a{
+    text-decoration:none;
+    color:gray;
+    transition:0.5s;
+    }
+    
+    .footer .row a:hover{
+    color:#fff;
+    }
+    
+    .footer .row ul{
+    width:100%;
+    }
+    
+    .footer .row ul li{
+    display:inline-block;
+    margin:0px 30px;
+    }
+    
+    .footer .row a i{
+    font-size:2em;
+    margin:0% 1%;
+    }
+    
+    @media (max-width:720px){
+    .footer{
+    text-align:left;
+    padding:5%;
+    }
+    .footer .row ul li{
+    display:block;
+    margin:10px 0px;
+    text-align:left;
+    }
+    .footer .row a i{
+    margin:0% 3%;
+    }
+    }
+
+
+
+    @media (max-width: 720px) {
+        .footer {
+            text-align: left;
+            padding: 5%;
+        }
+        .footer .row ul li {
+            display: block;
+            margin: 10px 0;
+            text-align: left;
+        }
+        .footer .row a i {
+            margin: 0 3%;
+        }
+    
+        #masternav {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        #nav {
+            justify-content: center;
+        }
+    
+        #center {
+            margin: 10% auto;
+        }
+    
+        #box1 h1, #box1 h2 {
+            font-size: 50px;
+        }
+    
+        #box2 p {
+            font-size: 16px;
+        }
+    
+        #right, #left {
+            width: 100%;
+        }
+    
+        #box3, #box4 {
+            width: 90%;
+            margin: 20px auto;
+        }
+    
+        #rect2 div {
+            width: 50%;
+        }
+    }
